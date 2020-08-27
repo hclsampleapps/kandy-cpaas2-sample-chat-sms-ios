@@ -26,12 +26,7 @@ class SMSViewController: BaseViewController, SMSDelegate {
 
         self.setNavigationBarColorForViewController(viewController: self, type: 1, titleString: "SMS")
 
-//        tbBubbleDemo.bubbleDelegate = self
         tbBubbleDemo.bubbleDataSource = self
-        
-//        senderNumber.text = "+19492657842"
-//        destinationNumber.text = "+19492657843"
-
         senderNumber.placeholder = "Sender Number"
         destinationNumber.placeholder = "Destination Number"
 
