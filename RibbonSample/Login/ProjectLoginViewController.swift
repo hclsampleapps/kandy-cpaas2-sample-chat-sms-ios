@@ -30,9 +30,9 @@ class ProjectLoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.privateprojectkey_Field.text = "PRIV-nesonukuv.34mv.nesoproject1"
+        self.privateprojectkey_Field.text = "abcde123-12a1-1a23-1234-123a12345a1a"
         self.baseUrl_Field.text = "oauth-cpaas.att.com" ////"nvs-cpaas-oauth.kandy.io"
-        self.privateprojectsecret_Field.text =  "8fe371a7-8158-4800-bb98-ca3ed7291816"
+        self.privateprojectsecret_Field.text =  "123abcde-a123-1234-abcd-ab12345c67d8"
         
         self.setNavigationBarColorForViewController(viewController: self, type: 0, titleString: "Client Credentials")
         NotificationCenter.default.addObserver(self, selector: #selector(ProjectLoginViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
