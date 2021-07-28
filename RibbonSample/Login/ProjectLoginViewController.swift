@@ -112,7 +112,6 @@ extension ProjectLoginViewController {
     func setConfig() {
         let configuration = CPConfig.sharedInstance()
         configuration.restServerUrl = self.baseUrl_Field.text ?? "oauth-cpaas.att.com"  //"nvs-cpaas-oauth.kandy.io"
-        configuration.useSecureConnection = true
     }
     
     func subscribeServices() {
