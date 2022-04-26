@@ -105,6 +105,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             image: nil,
             tag: 2)
         
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .black
+
+            tabBarController.tabBar.standardAppearance = appearance
+            tabBarController.tabBar.scrollEdgeAppearance = tabBarController.tabBar.standardAppearance
+        }
+
         let controllers = [loginViewControllers,projectLoginViewControllers]
         tabBarController.viewControllers = controllers
         window?.rootViewController = tabBarController
